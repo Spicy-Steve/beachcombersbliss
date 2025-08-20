@@ -1,2 +1,2 @@
-# beachcombersbliss
-ill do it later
+# Beachcombers Bliss Website
+Shit ass website for a school project
