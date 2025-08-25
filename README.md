@@ -1,2 +1,2 @@
 # Beachcombers Bliss Website
-Shit ass website for a school project
+Website for a school project
