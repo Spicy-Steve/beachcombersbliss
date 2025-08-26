@@ -1,0 +1,79 @@
+@font-face{
+    font-family: Bombardier;
+    src: url("../assets/fonts/Bombardier-Regular.ttf") format('truetype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: Luckiest Guy;
+    src: url("../assets/fonts/LuckiestGuy-Regular.ttf") format('truetype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Button Style Start */
+button {
+  --color: #175676;
+  background-color: #d4ecf9;
+  font-family: bombardier;
+  display: inline-block;
+  width: 8.5em;
+  height: 2.1em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 20px;
+  line-height: 5%;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 8px;
+  position: relative;
+  
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 230px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+/* Button Style End */
+
+
+nav{
+  text-align: center;
+  background-color: #d4ecf9;
+}
+
+/* Main Body Style */
+body{
+  text-align: center;
+  margin: 0%;
+  background-color: #fbcb98;
+  font-size: 17px;
+  font-family: luckiest guy;
+  font-weight: lighter;
+}

@@ -17,5 +17,6 @@ _site/
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
 
-# Exclude my vscode config
-.vscode
+# Exclude loose files
+.vscode/
+*.temp
