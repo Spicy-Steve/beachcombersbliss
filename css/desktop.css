@@ -15,7 +15,7 @@
 
 
 /* Button Style Start */
-button {
+.navbar button {
   --color: #175676;
   background-color: #d4ecf9;
   font-family: bombardier;
@@ -36,7 +36,7 @@ button {
   
 }
 
-button::before {
+.navbar button::before {
   position: absolute;
   content: "";
   background: var(--color);
@@ -46,24 +46,24 @@ button::before {
   border-radius: 50%;
 }
 
-button:hover {
+.navbar button:hover {
   color: white;
 }
 
-button:before {
+.navbar button:before {
   top: 100%;
   left: 100%;
   transition: 0.3s all;
 }
 
-button:hover::before {
+.navbar button:hover::before {
   top: -30px;
   left: -30px;
 }
 /* Button Style End */
 
 
-nav{
+.navbar nav{
   text-align: center;
   background-color: #d4ecf9;
 }
@@ -73,7 +73,7 @@ body{
   text-align: center;
   margin: 0%;
   background-color: #fbcb98;
-  font-size: 17px;
+  font-size: 17px; /* equivalent in % = font-size: 105%; */
   font-family: luckiest guy;
   font-weight: lighter;
 }
@@ -81,3 +81,35 @@ body{
 h1, p{
   font-weight: lighter;
 }
+
+.main {
+  text-align: center;
+  margin: 0%;
+  background-color: #fbcb98;
+  font-size: 17px; /* equivalent in % = font-size: 105%; */
+  font-family: luckiest guy;
+  font-weight: lighter;
+  gap: 15px;
+  padding: 20px;
+}
+
+.content {
+  gap: 20px;
+  padding: 100px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  max-width: 350px;
+}
+
+.cal {
+  padding: 0;
+  margin-top: -110px;
+}
+
+/* This removes the underline and replaces blue colour from the mobile button */
+a {
+  text-decoration: none;
+  color: #175676;
+}
+
