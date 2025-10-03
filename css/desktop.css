@@ -238,32 +238,35 @@ a {
 
 /* Contact styling */
 .contact-img-phone {
-  margin-top: -100px;
-  margin-right: 280px;
+  margin-top: -240px;
+  margin-left: 160px;
 }
 .contact-txt-phone {
   margin-top: -58px;
-  margin-right: 90px;
+  margin-left: 350px;
 }
 
 
 .contact-img-mail {
   text-align: center;
   margin-top: 10px;
-  margin-right: 280px;
+  margin-left: 160px;
 }
 .contact-txt-mail {
   margin-top: -58px;
+  margin-left: 440px;
 }
 
 .contact-img {
   text-align: left;
-  margin-top: px;
+  margin-top: -200px;
   margin-left: 400px;
 }
 
 .contanct-txt p {
   text-align: center;
   margin: auto;
+  margin-right: 600px;
+  margin-top: 200px;
   max-width: 300px;
 }
