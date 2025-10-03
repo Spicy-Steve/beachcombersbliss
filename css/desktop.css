@@ -220,7 +220,38 @@ a {
   margin-left: 1550px;
 }
 
+/* Bookings style */
 .cal {
   padding: 0;
-  margin-top: 80px; /* calendar height */
+  margin-top: -340px; /* calendar height */
+}
+.cal-txt {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 200px;
+  max-width: 250px;
+}
+.cal-img {
+  text-align: right;
+  margin-right: 100px;
+}
+
+/* Contact styling */
+.contact-img-phone {
+  margin-top: 150px;
+  margin-right: 280px;
+}
+.contact-txt-phone {
+  margin-top: -58px;
+  margin-right: 90px;
+}
+
+
+.contact-img-mail {
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 280px;
+}
+.contact-txt-mail {
+  margin-top: -58px;
 }
