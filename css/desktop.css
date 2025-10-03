@@ -89,7 +89,7 @@ h1, p{
   font-family: luckiest guy;
   font-weight: lighter;
   gap: 15px;
-  padding: 20px;
+
 }
 
 .index-content .index-left{
@@ -223,22 +223,22 @@ a {
 /* Bookings style */
 .cal {
   padding: 0;
-  margin-top: -340px; /* calendar height */
+  margin-top: -450px; /* calendar height */
 }
 .cal-txt {
   text-align: left;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 200px;
   max-width: 250px;
 }
 .cal-img {
   text-align: right;
-  margin-right: 100px;
+  margin-right: 140px;
 }
 
 /* Contact styling */
 .contact-img-phone {
-  margin-top: 150px;
+  margin-top: -100px;
   margin-right: 280px;
 }
 .contact-txt-phone {
@@ -254,4 +254,16 @@ a {
 }
 .contact-txt-mail {
   margin-top: -58px;
+}
+
+.contact-img {
+  text-align: left;
+  margin-top: px;
+  margin-left: 400px;
+}
+
+.contanct-txt p {
+  text-align: center;
+  margin: auto;
+  max-width: 300px;
 }
