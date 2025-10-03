@@ -14,7 +14,7 @@
 }
 
 
-/* Button Style Start */
+/* Button Style */
 .navbar button {
   --color: #175676;
   background-color: #d4ecf9;
@@ -60,7 +60,6 @@
   top: -30px;
   left: -30px;
 }
-/* Button Style End */
 
 
 .navbar nav{
@@ -68,7 +67,7 @@
   background-color: #d4ecf9;
 }
 
-/* Main Body Style */
+/* Index page Style */
 body{
   text-align: center;
   margin: 0%;
@@ -82,7 +81,7 @@ h1, p{
   font-weight: lighter;
 }
 
-.main {
+.index-main {
   text-align: center;
   margin: 0%;
   background-color: #fbcb98;
@@ -93,18 +92,47 @@ h1, p{
   padding: 20px;
 }
 
-.content {
+.index-content .index-left{
   gap: 20px;
   padding: 100px;
   padding-top: 10px;
   font-size: 14px;
   font-weight: lighter;
+  /* aligns the image to the left of the text */
+  display: flex;
+  justify-content: left;
+  padding-left: 13%;
+  text-align: left;
+}
+.index-content .index-left p {
   max-width: 350px;
 }
 
-.cal {
-  padding: 0;
-  margin-top: -110px;
+.index-content .index-right{
+  gap: 20px;
+  padding: 100px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  /* aligns the image to the left of the text */
+  justify-content: right;
+  padding-right: 13%;
+}
+
+.index-content .index-right p {
+  max-width: 350px;
+  position: relative;
+  top: -500px;
+  left: 1325px;
+  text-align: left;
+}
+
+.index-content .index-right .index-txt2 p {
+  max-width: 350px;
+  position: relative;
+  top: -600px;
+  left: 1325px;
+  text-align: left;
 }
 
 /* This removes the underline and replaces blue colour from the mobile button */
@@ -113,3 +141,86 @@ a {
   color: #175676;
 }
 
+.index-house1 {
+  position: relative;
+  left: 400px; /* 1st img side-side */
+  top: -300px; /* 1st img up-down */
+}
+
+.index-house2 {
+  position: relative;
+  left: 400px;
+  top: -400px;
+}
+
+/* Gallery page style */
+
+.gal-content p{
+  margin-top: -2px;
+  margin-left: 20px;
+  max-width: 250px;
+}
+.gal-content .gal-img1 {
+  text-align: left;
+  margin-top: 75px;
+  margin-left: 100px;
+}
+
+.gal-content .gal-img2 {
+  text-align: left;
+  margin-top: 75px;
+  margin-left: 100px;
+}
+
+.gal-content .gal-img3 {
+  text-align: center;
+  margin-top: -600px;
+}
+.gal-img3 p {
+  margin-left: 840px;
+}
+
+.gal-content .gal-img4 {
+  text-align: right;
+  margin-top: -450px;
+  margin-right: 400px;
+}
+.gal-img4 p {
+  margin-left: 1237px;
+}
+
+.gal-content .gal-img5 {
+  text-align: right;
+  margin-top: -153px;
+  margin-right: 200px;
+}
+.gal-img5 p {
+  text-align: center;
+  margin-left: 1550px;
+}
+
+.gal-content .gal-img6 {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 200px;
+}
+.gal-img6 p {
+  text-align: center;
+  margin-left: 1339px;
+  max-width: 150px;
+}
+
+.gal-content .gal-img7 {
+  text-align: right;
+  margin-top: -173px;
+  margin-right: 400px;
+}
+.gal-img7 p {
+  text-align: center;
+  margin-left: 1550px;
+}
+
+.cal {
+  padding: 0;
+  margin-top: 80px; /* calendar height */
+}
