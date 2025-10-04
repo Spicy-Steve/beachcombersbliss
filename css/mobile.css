@@ -50,7 +50,7 @@ h1, p{
   gap: 20px;
   padding: 100px;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 100%;
   font-weight: lighter;
 }
 
@@ -86,3 +86,5 @@ a {
   text-align: center;
   padding-left: 10%;
 }
+
+/* Contact style */
