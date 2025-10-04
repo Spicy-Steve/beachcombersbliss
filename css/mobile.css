@@ -101,3 +101,23 @@ a {
   text-align: center;
   padding-left: 10%;
 }
+
+.contact-img-phone {
+  margin-top: 2%;
+  text-align: left;
+  margin-left: 25%;
+}
+
+.contact-txt-phone {
+  margin-top: -10%;
+}
+
+.contact-img-mail {
+  margin-top: 2%;
+  text-align: left;
+  margin-left: 25%;
+}
+.contact-txt-mail {
+  margin-top: -11%;
+  margin-left: 17%;
+}
