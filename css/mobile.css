@@ -88,3 +88,8 @@ a {
 }
 
 /* Contact style */
+.contact-txt {
+  max-width: 80%;
+  text-align: center;
+  padding-left: 10%;
+}
