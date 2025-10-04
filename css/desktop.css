@@ -1,3 +1,4 @@
+/* Fonts: declare local webfonts and use font-display: swap for better UX */
 @font-face{
     font-family: Bombardier;
     src: url("../assets/fonts/Bombardier-Regular.ttf") format('truetype');
@@ -5,6 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
+/* Fonts: second display font for headings and branding */
 @font-face{
     font-family: Luckiest Guy;
     src: url("../assets/fonts/LuckiestGuy-Regular.ttf") format('truetype');
@@ -13,8 +15,7 @@
     font-style: normal;
 }
 
-
-/* Button Style */
+/* Nav buttons: root color variable for easy theming */
 .navbar button {
   --color: #175676;
   background-color: #d4ecf9;
@@ -33,9 +34,8 @@
   border: 2px solid var(--color);
   border-radius: 8px;
   position: relative;
-  
 }
-
+/* Nav buttons: circular pseudo-element used as a decorative hover bubble behind the button */
 .navbar button::before {
   position: absolute;
   content: "";
@@ -45,80 +45,78 @@
   z-index: -1;
   border-radius: 50%;
 }
-
+/* Nav buttons: invert text color on hover for contrast against the bubble */
 .navbar button:hover {
   color: white;
 }
-
+/* Nav buttons: start the bubble off-canvas and animate its position */
 .navbar button:before {
   top: 100%;
   left: 100%;
   transition: 0.3s all;
 }
-
+/* Nav buttons: slide the bubble into view on hover for a reveal effect */
 .navbar button:hover::before {
   top: -30px;
   left: -30px;
 }
-
-
+/* Nav wrapper: center nav items and match button background */
 .navbar nav{
   text-align: center;
   background-color: #d4ecf9;
 }
 
-/* Index page Style */
+/* Base / index: global body styles and site background */
 body{
   text-align: center;
   margin: 0%;
   background-color: #fbcb98;
-  font-size: 17px; /* equivalent in % = font-size: 105%; */
+  font-size: 17px;
   font-family: luckiest guy;
   font-weight: lighter;
 }
-
+/* Typography: lighter weight for headings and paragraphs */
 h1, p{
   font-weight: lighter;
 }
-
+/* Index main: page-level container matching body defaults */
 .index-main {
   text-align: center;
   margin: 0%;
   background-color: #fbcb98;
-  font-size: 17px; /* equivalent in % = font-size: 105%; */
+  font-size: 17px;
   font-family: luckiest guy;
   font-weight: lighter;
   gap: 15px;
-
 }
 
+/* Index columns: left column layout and spacing */
 .index-content .index-left{
   gap: 20px;
   padding: 100px;
   padding-top: 10px;
   font-size: 14px;
   font-weight: lighter;
-  /* aligns the image to the left of the text */
   display: flex;
   justify-content: left;
   padding-left: 13%;
   text-align: left;
 }
+/* Index columns: constrain paragraph width for readability */
 .index-content .index-left p {
   max-width: 350px;
 }
-
+/* Index columns: right column layout; currently uses large offsets (fragile) */
 .index-content .index-right{
   gap: 20px;
   padding: 100px;
   padding-top: 10px;
   font-size: 14px;
   font-weight: lighter;
-  /* aligns the image to the left of the text */
   justify-content: right;
   padding-right: 13%;
 }
-
+/* Index columns: right column paragraphs positioned with relative offsets (consider flex/grid for responsive layout) */
 .index-content .index-right p {
   max-width: 350px;
   position: relative;
@@ -126,7 +124,7 @@ h1, p{
   left: 1325px;
   text-align: left;
 }
-
+/* Index columns: secondary right-text block with similar positioning caveat */
 .index-content .index-right .index-txt2 p {
   max-width: 350px;
   position: relative;
@@ -135,51 +133,52 @@ h1, p{
   text-align: left;
 }
 
-/* This removes the underline and replaces blue colour from the mobile button */
+/* Links: default anchor styles */
 a {
   text-decoration: none;
   color: #175676;
 }
 
+/* Index images: positioned for desktop layout; may overlap on other viewports */
 .index-house1 {
   position: relative;
-  left: 400px; /* 1st img side-side */
-  top: -300px; /* 1st img up-down */
+  left: 400px;
+  top: -300px;
 }
-
 .index-house2 {
   position: relative;
   left: 400px;
   top: -400px;
 }
 
-/* Gallery page style */
-
+/* Gallery: base caption spacing */
 .gal-content p{
   margin-top: -2px;
   margin-left: 20px;
   max-width: 250px;
 }
+/* Gallery: image 1 placement */
 .gal-content .gal-img1 {
   text-align: left;
   margin-top: 75px;
   margin-left: 100px;
 }
-
+/* Gallery: image 2 placement */
 .gal-content .gal-img2 {
   text-align: left;
   margin-top: 75px;
   margin-left: 100px;
 }
-
+/* Gallery: image 3 centered but uses large negative margin (fragile) */
 .gal-content .gal-img3 {
   text-align: center;
   margin-top: -600px;
 }
+/* Gallery: image 3 caption positioned by large left margin */
 .gal-img3 p {
   margin-left: 840px;
 }
-
+/* Gallery: image 4 placement and caption offset */
 .gal-content .gal-img4 {
   text-align: right;
   margin-top: -450px;
@@ -188,7 +187,7 @@ a {
 .gal-img4 p {
   margin-left: 1237px;
 }
-
+/* Gallery: image 5 placement and caption offset */
 .gal-content .gal-img5 {
   text-align: right;
   margin-top: -153px;
@@ -198,7 +197,7 @@ a {
   text-align: center;
   margin-left: 1550px;
 }
-
+/* Gallery: image 6 placement and caption width limit */
 .gal-content .gal-img6 {
   text-align: right;
   margin-top: 20px;
@@ -209,7 +208,7 @@ a {
   margin-left: 1339px;
   max-width: 150px;
 }
-
+/* Gallery: image 7 placement and caption offset */
 .gal-content .gal-img7 {
   text-align: right;
   margin-top: -173px;
@@ -220,49 +219,52 @@ a {
   margin-left: 1550px;
 }
 
-/* Bookings style */
+/* Bookings: calendar container pulled up visually */
 .cal {
   padding: 0;
-  margin-top: -450px; /* calendar height */
+  margin-top: -450px;
 }
+/* Bookings: calendar text block spacing */
 .cal-txt {
   text-align: left;
   margin-top: 100px;
   margin-left: 200px;
   max-width: 250px;
 }
+/* Bookings: calendar image alignment */
 .cal-img {
   text-align: right;
   margin-right: 140px;
 }
 
-/* Contact styling */
+/* Contact: phone icon placement */
 .contact-img-phone {
   margin-top: -240px;
   margin-left: 160px;
 }
+/* Contact: phone text alignment */
 .contact-txt-phone {
   margin-top: -58px;
   margin-left: 350px;
 }
-
-
+/* Contact: email icon placement */
 .contact-img-mail {
   text-align: center;
   margin-top: 10px;
   margin-left: 160px;
 }
+/* Contact: email text alignment */
 .contact-txt-mail {
   margin-top: -58px;
   margin-left: 440px;
 }
-
+/* Contact: generic contact image placement */
 .contact-img {
   text-align: left;
   margin-top: -200px;
   margin-left: 400px;
 }
-
+/* Contact: main contact text block constraints */
 .contanct-txt p {
   text-align: center;
   margin: auto;

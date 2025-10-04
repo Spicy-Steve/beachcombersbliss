@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page metadata: character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beachcombers Bliss</title>
+
+    <!-- Desktop stylesheet -->
     <link rel="stylesheet" href=css/desktop.css>
+    <!-- Favicon shown in browser tab -->
     <link rel="icon" href="assets/icons/favicon.ico">
+
+    <!-- Navigation bar (logo + page links + mobile site link)
+         Note: nav is currently inside head; moving it into body is recommended for valid HTML -->
     <div class="navbar">
         <nav>
+            <!-- Site logo -->
             <img src="assets/icons/logo.png" alt="Desktop site" width="2%"></a>
+
+            <!-- Primary navigation buttons -->
             <button onclick="window.location.href='index.html'">HOME</button>
             <button onclick="window.location.href='gallery.html'">GALLERY</button>
             <button onclick="window.location.href='bookings.html'">BOOKINGS</button>
             <button onclick="window.location.href='contact.html'">CONTACT</button>
+
+            <!-- Link to mobile-optimized contact page -->
             <a href="contact-mobile.html"><img src="assets/icons/mobile.svg" alt="Mobile site" width="40px"></a>
         </nav>
     </div>
 </head>
 
 <body>
+    <!-- Page header / hero for contact page -->
     <section class="contanct-main">
         <h1>
             CONTACT
         </h1>
     </section>
 
+    <!-- Main contact content: text, image, and contact methods -->
     <section class="contanct-content">
         <div class="contanct-txt">
+            <!-- Introductory text for contact page -->
             <p>
                 For further inquiries, please contact me using the details below. We look forward to hosting you soon!
             </p>
         </div>
+
         <div class="contact-img">
-            <img src="assets/images/WhatsApp Image 2025-08-07 at 8.26.27 PM.jpeg" alt="Sunset2" width="450px">
+            <!-- Decorative / location image -->
+            <img src="assets/images/WhatsApp Image 2025-08-07 at 8.26.27 PM.jpeg" alt="Sunset" width="450px">
         </div>
 
+        <!-- Phone contact block: icon + number -->
         <div class="contact-img-phone">
-            <img src="assets/icons/phone.svg">
+            <!-- Phone icon (consider adding alt text for accessibility) -->
+            <img src="assets/icons/phone.svg" alt="Phone icon">
         </div>
         <div class="contact-txt-phone">
             <p>
@@ -44,8 +63,10 @@
             </p>
         </div>
 
+        <!-- Email contact block: icon + address -->
         <div class="contact-img-mail">
-            <img src="assets/icons/mail.svg">
+            <!-- Mail icon (add alt text if needed) -->
+            <img src="assets/icons/mail.svg" alt="Mail icon">
         </div>
         <div class="contact-txt-mail">
             <p>

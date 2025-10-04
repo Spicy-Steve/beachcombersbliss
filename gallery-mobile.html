@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page metadata: character encoding and responsive viewport for mobile -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beachcombers Bliss</title>
+
+    <!-- Mobile stylesheet (keeps layout optimized for small screens) -->
     <link rel="stylesheet" href=css/mobile.css>
+    <!-- Favicon shown in browser tab -->
     <link rel="icon" href="assets/icons/favicon.ico">
+
+    <!-- Mobile navigation bar (icons only for compact UI)
+         Note: nav is placed inside <head> for brevity in this project — for valid HTML it should be inside <body>. -->
     <div class="navbar">
         <nav>
+            <!-- Site logo (small for mobile) -->
             <img src="assets/icons/logo.png" alt="Desktop site" width="12%"></a>
+
+            <!-- Navigation icons linking to mobile pages -->
             <a href="index-mobile.html"><img src="assets/icons/home.svg" alt="Home" width="12%"></a>
             <a href="gallery-mobile.html"><img src="assets/icons/gallery.svg" alt="Gallery" width="12%"></a>
             <a href="bookings-mobile.html"><img src="assets/icons/calendar.svg" alt="Bookings" width="12%"></a>
             <a href="contact-mobile.html"><img src="assets/icons/contact.svg" alt="Contact" width="12%"></a>
+
+            <!-- Link to desktop site (icon) -->
             <a href="bookings.html"><img src="assets/icons/computer.svg" alt="Desktop site" width="12%"></a>
         </nav>
     </div>
 </head>
 
 <body>
+    <!-- Page header / hero for gallery on mobile -->
     <section class="gal-main">
         <h1>
             GALLERY
         </h1>
     </section>
 
+    <!-- Gallery content stacked for mobile: images followed by captions -->
     <section class="gal-content">
         <div class="gal-img1">
-            <img src="assets/images/Coates Ave 13 (8).jpg" alt="Exterior wideangle" width="70%">
+            <!-- Main feature image (scaled for mobile) -->
+            <img src="assets/images/Coates Ave 13 (8).jpg" alt="Kitchen / Interior" width="70%">
         </div>
+
+        <!-- Use CSS margins/padding instead of <br><br> for spacing -->
         <br><br>
+
         <div class="gal-img2">
-            <img src="assets/images/Coates Ave 13 (12).jpg" alt="Exterior wideangle" width="35%">
-            
+            <!-- Smaller image (left column) -->
+            <img src="assets/images/Coates Ave 13 (12).jpg" alt="Bedroom" width="35%">
         </div>
+
         <div class="gal-img3">
-            <img src="assets/images/Coates Ave 13 (2).jpg" alt="Exterior wideangle" width="35%">
+            <!-- Smaller image (right column) -->
+            <img src="assets/images/Coates Ave 13 (2).jpg" alt="Deck / Exterior" width="35%">
         </div>
 
         <div class="gal-txt">
+            <!-- Combined caption for the two small images above -->
             <p>
                 Large games room & King size bed
             </p>
         </div>
+
         <br><br>
+
         <div class="gal-img4">
-            <img src="assets/images/Coates Ave 13 (15).jpg" alt="Exterior wideangle" width="55%">
+            <!-- Wider image showing outdoor area -->
+            <img src="assets/images/Coates Ave 13 (15).jpg" alt="Deck view" width="55%">
         </div>
+
         <div class="gal-txt">
+            <!-- Caption describing the outdoor deck -->
             <p>
                 Extensive sun-filled deck
             </p>

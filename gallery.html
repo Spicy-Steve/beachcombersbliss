@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page metadata: character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beachcombers Bliss</title>
+
+    <!-- Desktop stylesheet -->
     <link rel="stylesheet" href=css/desktop.css>
+    <!-- Favicon shown in browser tab -->
     <link rel="icon" href="assets/icons/favicon.ico">
+
+    <!-- Navigation bar (logo + page links + mobile site link)
+         Note: nav is currently inside head; moving it into body is recommended for valid HTML. -->
     <div class="navbar">
         <nav>
+            <!-- Site logo -->
             <img src="assets/icons/logo.png" alt="Desktop site" width="2%"></a>
+
+            <!-- Primary navigation buttons -->
             <button onclick="window.location.href='index.html'">HOME</button>
             <button onclick="window.location.href='gallery.html'">GALLERY</button>
             <button onclick="window.location.href='bookings.html'">BOOKINGS</button>
             <button onclick="window.location.href='contact.html'">CONTACT</button>
+
+            <!-- Link to mobile-optimized gallery -->
             <a href="gallery-mobile.html"><img src="assets/icons/mobile.svg" alt="Mobile site" width="40px"></a>
         </nav>
     </div> 
 </head>
 
 <body>
+    <!-- Page header / hero for gallery -->
     <section class="gal-main">
         <h1>
             GALLERY
         </h1>
     </section>
 
+    <!-- Gallery content: images with captions arranged via CSS classes -->
     <section class="gal-content">
         <div class="gal-img1">
+            <!-- Wide exterior shot -->
             <img src="assets/images/Coates Ave 13 (42).jpg" alt="Exterior wideangle" width="350px">
             <p>
                 Plenty of space for parking and room to play outside
@@ -34,6 +49,7 @@
         </div>
         
         <div class="gal-img2">
+            <!-- Deck view from upstairs -->
             <img src="assets/images/Coates Ave 13 (15).jpg" alt="Exterior deck" width="350px">
             <p>
                 View from upstairs deck off dining room
@@ -41,6 +57,7 @@
         </div>
 
         <div class="gal-img3">
+            <!-- Kitchen overview (larger image) -->
             <img src="assets/images/Coates Ave 13 (8).jpg" alt="Kitchen" width="600px">
             <p>
                 Modern, spacious kitchen with quality cookware
@@ -48,6 +65,7 @@
         </div>
 
         <div class="gal-img4">
+            <!-- Bedroom example -->
             <img src="assets/images/Coates Ave 13 (12).jpg" alt="Bedroom 1" width="170px">
             <p>
                 King size bed
@@ -55,6 +73,7 @@
         </div>
 
         <div class="gal-img5">
+            <!-- Living area with entertainment -->
             <img src="assets/images/Coates Ave 13 (10).jpg" alt="Living Room" width="170px">
             <p>
                 Relax with netflix, board games, and a wide selection of books
@@ -62,6 +81,7 @@
         </div>
 
         <div class="gal-img6">
+            <!-- Downstairs / deck area -->
             <img src="assets/images/Coates Ave 13 (2).jpg" alt="Downstairs" width="170px">
             <p>
                 Extensive sun-filled deck
@@ -69,6 +89,7 @@
         </div>
 
         <div class="gal-img7">
+            <!-- Side of house / games room -->
             <img src="assets/images/Coates Ave 13 (18).jpg" alt="Side of house" width="170px">
             <p>
                 Large games room
