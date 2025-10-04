@@ -1,0 +1,88 @@
+@font-face{
+    font-family: Bombardier;
+    src: url("../assets/fonts/Bombardier-Regular.ttf") format('truetype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: Luckiest Guy;
+    src: url("../assets/fonts/LuckiestGuy-Regular.ttf") format('truetype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar nav{
+  text-align: center;
+  background-color: #d4ecf9;
+  letter-spacing: 10%;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+/* Index page Style */
+body{
+  text-align: center;
+  margin: 0%;
+  background-color: #fbcb98;
+  font-size: 17px; /* equivalent in % = font-size: 105%; */
+  font-family: luckiest guy;
+  font-weight: lighter;
+}
+
+h1, p{
+  font-weight: lighter;
+}
+
+.index-main {
+  text-align: center;
+  margin: 0%;
+  background-color: #fbcb98;
+  font-size: 17px; /* equivalent in % = font-size: 105%; */
+  font-family: luckiest guy;
+  font-weight: lighter;
+  gap: 15px;
+  padding: 20px;
+}
+
+.index-content {
+  gap: 20px;
+  padding: 100px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.index-img1 {
+  text-align: center;
+}
+
+.index-txt {
+  max-width: 60%;
+  text-align: center;
+  padding-left: 20%;
+}
+/* This removes the underline and replaces blue colour from the desktop button */
+a {
+  text-decoration: none;
+  color: #175676;
+}
+
+/* Gallery page styling */
+.gal-img2 {
+  text-align: right;
+  margin-right: 20%;
+}
+.gal-img3 {
+  text-align: left;
+  margin-top: -19%;
+  margin-left: 20%;
+}
+
+/* Bookings page style */
+.cal-txt {
+  max-width: 80%;
+  text-align: center;
+  padding-left: 10%;
+}
