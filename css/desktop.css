@@ -35,7 +35,7 @@
   border-radius: 8px;
   position: relative;
 }
-/* Nav buttons: circular pseudo-element used as a decorative hover bubble behind the button */
+/* Nav buttons: circular object used as a decorative hover bubble behind the button */
 .navbar button::before {
   position: absolute;
   content: "";
@@ -66,7 +66,7 @@
   background-color: #d4ecf9;
 }
 
-/* Base / index: global body styles and site background */
+/* Base/index: global body styles and site background */
 body{
   text-align: center;
   margin: 0%;
@@ -106,7 +106,7 @@ h1, p{
 .index-content .index-left p {
   max-width: 350px;
 }
-/* Index columns: right column layout; currently uses large offsets (fragile) */
+/* Index columns: right column layout */
 .index-content .index-right{
   gap: 20px;
   padding: 100px;
@@ -116,7 +116,7 @@ h1, p{
   justify-content: right;
   padding-right: 13%;
 }
-/* Index columns: right column paragraphs positioned with relative offsets (consider flex/grid for responsive layout) */
+/* Index columns: right column paragraphs positioned with relative offsets */
 .index-content .index-right p {
   max-width: 350px;
   position: relative;
@@ -139,7 +139,7 @@ a {
   color: #175676;
 }
 
-/* Index images: positioned for desktop layout; may overlap on other viewports */
+/* Index images: positioned for desktop layout */
 .index-house1 {
   position: relative;
   left: 400px;
@@ -169,7 +169,7 @@ a {
   margin-top: 75px;
   margin-left: 100px;
 }
-/* Gallery: image 3 centered but uses large negative margin (fragile) */
+/* Gallery: image 3 placement */
 .gal-content .gal-img3 {
   text-align: center;
   margin-top: -600px;

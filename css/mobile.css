@@ -27,7 +27,7 @@ body{
   text-align: center;
   margin: 0%;
   background-color: #fbcb98;
-  font-size: 17px; /* equivalent in % = font-size: 105%; */
+  font-size: 17px;
   font-family: luckiest guy;
   font-weight: lighter;
 }
@@ -42,7 +42,7 @@ h1, p{
   text-align: center;
   margin: 0%;
   background-color: #fbcb98;
-  font-size: 17px; /* equivalent in % = font-size: 105%; */
+  font-size: 17px;
   font-family: luckiest guy;
   font-weight: lighter;
   gap: 15px;
