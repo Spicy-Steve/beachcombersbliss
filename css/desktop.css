@@ -15,7 +15,7 @@
     font-style: normal;
 }
 
-/* Nav buttons: root color variable for easy theming */
+/* Nav buttons: using a variable called color for easy theming */
 .navbar button {
   --color: #175676;
   background-color: #d4ecf9;
